@@ -13,4 +13,17 @@ Machine learning is an AI branch.
 
 Field that works toward finding patterns and draw conclusions from data.
 
+# Types of machine learning
 
+## Supervised learning
+
+Here you give labeled inputs to your computer, which have a certain output.
+With a huge amount of these inputs you train your computer to predict the next output based on the input.
+
+## unsupervised learning
+
+Here we use unlabeled data to discover patterns in it.
+
+## Reinforcement learning
+
+Here the machine learns in an interactive environment, based on rewards and penalties.
