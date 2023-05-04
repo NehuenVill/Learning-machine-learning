@@ -34,7 +34,13 @@ And there's _ordinal data_ which means there's an order in the different parts o
 
 To feed your model with this type of data you normally give a number/value ascendingly to each one of the parts of the category.
 
-2. 
+2. Quantitative: Data which value is numerical (length, temperature), there's continuous and discrete types.
+
+### Supervised learning tasks:
+
+1. Classification: To predict discrete classes.There's multiclass classification (where there are more than one class i.e dog breeds) and binary classification (Where there's only two classes i.e. Spam/not Spam, positive or negative).
+
+2. Regression: To predict continuous values.
 
 ## unsupervised learning
 
