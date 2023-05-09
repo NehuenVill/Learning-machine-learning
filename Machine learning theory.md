@@ -49,3 +49,7 @@ Here we use unlabeled data to discover patterns in it.
 ## Reinforcement learning
 
 Here the machine learns in an interactive environment, based on rewards and penalties.
+
+# The machine learning cycle
+
+![Machine learning cycle from Python Jedi youtube channel](C:/Users/nehue/Documents/programas_de_python/machine_learning/ml_cycle.png)
