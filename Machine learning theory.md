@@ -132,5 +132,18 @@ In this models you look at different labeled inputs near your new and unknown in
 
 K = how many neighbors closest to our new input should we based the model prediction on?
 
+### Naive Bayes
+
+#### Bayes' rule
+
+What's the probability of some event *A* happening, given that an even *B* happened.
+
+Formula:
+
+$$ P(A|B) = {P(B|A) . P(A)\over P(B)} $$
+
+P(A|B): The probability of A happening given that B happened.
+
+B: This is our condition, something we know has happened.
 
 
