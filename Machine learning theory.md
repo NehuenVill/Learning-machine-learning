@@ -112,3 +112,25 @@ Here the machine learns in an interactive environment, based on rewards and pena
 
 The rate to which the model returns the right output for the feature sample.
 
+## Precision
+
+The amount of predicted outputs of a certain label that we know were predicted right over the total amount of predicted outputs of this label (both right and wrong).
+
+## Recall
+
+The amount of predicted outputs of a certain label that we know were predicted right over the total amount of this labels available on our test dataset
+
+# Models
+
+## K-Nearest Neighbors:
+
+In this models you look at different labeled inputs near your new and unknown input (the one to predict) and assign it the output that's repeated the most on the samples around it.
+
+### Steps of the K-NN:
+
+1. Define a distance between the points and classify them (in two dimentional graphs this is known as Euclidean distance).
+
+K = how many neighbors closest to our new input should we based the model prediction on?
+
+
+
