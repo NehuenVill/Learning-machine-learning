@@ -146,4 +146,43 @@ P(A|B): The probability of A happening given that B happened.
 
 B: This is our condition, something we know has happened.
 
+#### Naive bayes general formula:
+
+$$ P(C_k|x) = {P(x|C_k) . P(C_k)\over P(x)} $$
+
+Where x is our feature vector.
+
+$$ C_k $$ are the different categories up to *k*.
+
+$$ P(C_k|x) $$ is the probability of X fitting in the category $$ C_k $$ it's called the *posterior*.
+
+$$ P(x|C_k) $$ is the likelihood of x fitting $$ C_k $$ considering that x belongs to that class/category.
+
+$$ P(C_k) $$ is the *prior* which means, what's the probability of the whole class itself, what's the probability of the $$ C_k $$ existing in the general dataset.
+
+P(x) is the *evidence*, the probability of the *x* feature vector existing in the data set.
+
+#### Naive Bayes' rule:
+
+$$ P(C_k|x_1, x_2, ..., x_n) \propto P(C_k) . \prod_{i=1}^{n}P(x_i|C_k) $$
+
+$$ P(C_k|x_1, x_2, ..., x_n) $$ : What's the probability of that we're on some class $$ C_k $$ given that we have up to $$ x_n $$ feature vectors.
+
+In naive bayes we assume that all the different features of our data are independent, the are not linked to each other.
+
+##### Predicted output (ŷ):
+
+$$ ŷ = argmax(P(C_k|x_1, x_2, ..., x_n)) $$ 
+
+argmax returns the argument (k in this case) which maximises the right's expression, which makes it the largest value.
+
+$$ k  \epsilon  \{1, k\}$$ which are all the existing categories/classes in the dataset.
+
+So what we do is to solve the expression for each *k* and find the one that makes that the largest.
+
+According to the naive bayes' rule we can write the formula for ŷ like this:
+
+$$ ŷ = argmax(P(C_k) . \prod_{i=1}^{n}P(x_i|C_k)) $$ 
+
+Finding the *k* value which makes the right's expression the largest is called _MAP_ (Maximum A Posteriori).
 
