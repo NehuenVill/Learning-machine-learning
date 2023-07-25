@@ -118,7 +118,9 @@ The amount of predicted outputs of a certain label that we know were predicted r
 
 ## Recall
 
-The amount of predicted outputs of a certain label that we know were predicted right over the total amount of this labels available on our test dataset
+The amount of predicted outputs of a certain label that we know were predicted right over the total amount of this labels available on our test dataset.
+
+![Precision and recall graphical description](C:/Users/nehue/Documents/programas_de_python/machine_learning/Precisionrecall.png)
 
 # Models
 
@@ -186,3 +188,30 @@ $$ ŷ = argmax(P(C_k) . \prod_{i=1}^{n}P(x_i|C_k)) $$
 
 Finding the *k* value which makes the right's expression the largest is called _MAP_ (Maximum A Posteriori).
 
+## Logistic Regression
+
+Useful to predict discrete values.
+
+We calculate the probability of the input belonging to one of the given classes.
+
+![Logistic regression graph](C:/Users/nehue/Documents/programas_de_python/machine_learning/Logistic_regression_graph.png)
+
+In the above example of the graph, the ŷ is not actually the predicted probability of the input data, since *mx + b* ranges between minus infinity and plus infinity, so we make it equal to the **Odds** instead:
+
+$$ {P \over 1-P} = mx + b $$
+
+If we take the ln of the odds and do some math, wee end up with this formula:
+
+$$ P =  {1 \over 1+e^{-(mx+b)}} $$ 
+
+Which is equivalent to the Sigmoid function:
+
+$$ S(y) = {1 \over 1+e^{-y}} $$
+
+So we have the Sigmoid function on **mx+b**
+
+$$ P =  {1 \over 1+e^{-(mx+b)}} = S(mx + b) $$
+
+Graphically looks like this:
+
+![Sigmoid function graph](C:/Users/nehue/Documents/programas_de_python/machine_learning/SF_graph.png)
