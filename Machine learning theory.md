@@ -215,3 +215,32 @@ $$ P =  {1 \over 1+e^{-(mx+b)}} = S(mx + b) $$
 Graphically looks like this:
 
 ![Sigmoid function graph](C:/Users/nehue/Documents/programas_de_python/machine_learning/SF_graph.png)
+
+## Support Vector Machines (SVM)
+
+To put it in simple terms:
+
+Imagin a graph where each axis is a different feature of the dataset, and the two classes are represented in some way on the graph (dots and crosses), the SVM model would be the line that best divides the area where there are the most samples of one class from the are where there are the most samples of the other class.
+
+![SVM graph](C:/Users/nehue/Documents/programas_de_python/machine_learning/SVM_graph.png)
+
+The best line would be the one with the largest margins:
+
+![SVM graph margins](C:/Users/nehue/Documents/programas_de_python/machine_learning/SVM_graph_margins.png)
+
+**IMPORTANT** : SVM are not good when it comes to outliers on the dataset, since they can drastically change the SVM line direction and position.
+
+### Kernel trick:
+
+Imagine you have two classes on your dataset and only one feature, you'd not be able to draw a SVM line.
+
+Therefore, we come up with a two different dimensions from the original one:
+
+**i.e:**
+
+$$ X => (X ; X^{2}) $$
+
+![Kernel trick](C:/Users/nehue/Documents/programas_de_python/machine_learning/kernel_trick.png)
+
+
+
