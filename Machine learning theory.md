@@ -242,5 +242,29 @@ $$ X => (X ; X^{2}) $$
 
 ![Kernel trick](C:/Users/nehue/Documents/programas_de_python/machine_learning/kernel_trick.png)
 
+## Neural Networks
+
+![NN](C:/Users/nehue/Documents/programas_de_python/machine_learning/NN.png)
 
 
+Each of those "hidden layers" are the neurons.
+
+### Functioning of a neural network
+
+In the neural networks, all the features of the dataset are weighted by a weight, which is a value they are multiplied by, sumed together along wiht a bias (a variable amount depending on the programmer) and passed to the neuron, then they're passed to the activation function and lastly it gives an output.
+
+![NN in action](C:/Users/nehue/Documents/programas_de_python/machine_learning/NN_working.png)
+
+### Activation function
+
+![Activation_functions](C:/Users/nehue/Documents/programas_de_python/machine_learning/Activation_functions.png)
+
+**IMPORTANT:** without the activation function it becomes only a linear model!!
+
+In NN we feed our model with the training dataset, recieve an output and calculate the loss, which are then passed back to the model, to adjust the W (weight values) and get better results.
+
+## Adjusting the weights (backpropagation):
+
+![Adjusting w](C:/Users/nehue/Documents/programas_de_python/machine_learning/Adjusting_w.png)
+
+**We use Tensorflow library to handle Neural Networks with ease.**
