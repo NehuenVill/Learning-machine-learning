@@ -268,3 +268,24 @@ In NN we feed our model with the training dataset, recieve an output and calcula
 ![Adjusting w](C:/Users/nehue/Documents/programas_de_python/machine_learning/Adjusting_w.png)
 
 **We use Tensorflow library to handle Neural Networks with ease.**
+
+# Unsupervised learning
+
+## K-means clustering
+
+The idea is to compute K clusters from the given data.
+
+![K means clustering](C:/Users/nehue/Documents/programas_de_python/machine_learning/kmc.png)
+
+### How is this computed?
+
+1. Choose 3 random points as centroids.
+2. Compute the distance between the points and the centroids.
+3. Assing the points to the closest centroid, making the first clusters.
+4. Re calculate new centroids based on the previous results (possibly taking an average of the previouly formed clusters).
+5. Re assaign the points to the closest centroid, thus creating new clusters.
+6. Repeat the process over and over again until we have K amount of clusters properly defined with the specific points that should be inside each one (when even if we re-compute the centroids no change in the clusters is made).
+
+# Principal Component Analysis (PCA)
+
+
