@@ -288,4 +288,12 @@ The idea is to compute K clusters from the given data.
 
 # Principal Component Analysis (PCA)
 
+The idea behind PCA is to reduce the number of dimensions to the most significant ones.
+
+The component would be the direction in space with the largest variance, the one that tells us the most about the dataset, this would be expressed in the graph by a line dividing the points (like it happens in linnear regression).
+
+![PCA](C:/Users/nehue/Documents/programas_de_python/machine_learning/pca.png)
+
+Now that we have that principal component, we can use it in a plot with a y value if we had one, instead of two different graphs with the two previous different features (or more than two features).
+
 
